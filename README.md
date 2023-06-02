@@ -17,6 +17,12 @@ downstream summarization tasks on VCSum to facilitate further research.
 
 ## Data Structure
 
+The files started with `long_` contain the overall meeting summaries, and the files started with
+`short_` contains the segmentation meeting summaries and corresponding headlines.
+
+We put all meeting transcripts in `overall_context.txt` and all highlight annotations in 
+`overall_highlights.txt`. All files share the `id` and `av_num` values.
+
 The `long/short_train/dev/text.txt` files contain the annotations of topic segmentation, headlines, segmentation 
 summary and overall meeting summary. The keys in the `dict` are:
 
