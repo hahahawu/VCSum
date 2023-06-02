@@ -13,26 +13,43 @@ summarization and retrieval-then-generate summarization. Our analysis confirms t
 and robustness  of VCSum. We also provide a set of benchmark models regarding different 
 downstream summarization tasks on VCSum to facilitate further research.
 
-**We are preparing the dataset. We will release it once the reviewing process of SenseTime is 
-finished.**
+![annotation screenshot](fig/annotation_tool.png)
 
-## Data Samples
+## Data Structure
 
-We provide five pieces of data samples from our dataset for your convenience. There are two files, 
-i.e., `data_samples.txt` and `highlight_samples.txt`.
+The `long/short_train/dev/text.txt` files contain the annotations of topic segmentation, headlines, segmentation 
+summary and overall meeting summary. The keys in the `dict` are:
 
-The `data_samples.txt` contains the annotations of topic segmentation, headlines, segmentation summary and overall 
-meeting summary. The keys in the `dict` are:
-
-- `id`: the unique identifier of the meeting transcript.
+- `id` and `av_num`: the unique identifiers of the meeting transcript.
 - `eos_index`: the utterance positions of topic segmentation.
 - `speaker`: the speaker identifier.
 - `context`: the meeting transcript.
 - `summary`: the overall meeting summary.
-- `discussions`: the list of segmentation summaries.
-- `headlines`: the list of headlines.
+- `discussion`: the segmentation summary.
+- `agenda`: the segmentation headline.
 
-The `highlight_samples.txt` file provides the annotations of highlight sentences.
+The `highlight` files provide the annotations of highlight sentences.
 
-- `id`: the unique identifier of the meeting transcript.
+- `id` and `av_num`: the unique identifier of the meeting transcript.
 - `highlights`: the 0/1 list of context words. 1 stands for the highlighted word.
+
+## Cite
+```
+@article{wu2023vcsum,
+  title={VCSUM: A Versatile Chinese Meeting Summarization Dataset},
+  author={Wu, Han and Zhan, Mingjie and Tan, Haochen and Hou, Zhaohui and Liang, Ding and Song, Linqi},
+  journal={arXiv preprint arXiv:2305.05280},
+  year={2023}
+}
+```
+[comment]: <> (@inproceedings{wu2023vcsum,)
+
+[comment]: <> (  title={VCSUM: A Versatile Chinese Meeting Summarization Dataset},)
+
+[comment]: <> (  author={Wu, Han and Zhan, Mingjie and Tan, Haochen and Hou, Zhaohui and Liang, Ding and Song, Linqi},)
+
+[comment]: <> (  booktitle={Findings of the Association for Computational Linguistics: ACL 2023},)
+
+[comment]: <> (  year={2023})
+
+[comment]: <> (})
