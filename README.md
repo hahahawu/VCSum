@@ -40,21 +40,15 @@ The `highlight` files provide the annotations of highlight sentences.
 
 ## Cite
 ```
-@article{wu2023vcsum,
-  title={VCSUM: A Versatile Chinese Meeting Summarization Dataset},
-  author={Wu, Han and Zhan, Mingjie and Tan, Haochen and Hou, Zhaohui and Liang, Ding and Song, Linqi},
-  journal={arXiv preprint arXiv:2305.05280},
-  year={2023}
+@inproceedings{wu-etal-2023-vcsum,
+    title = "{VCSUM}: A Versatile {C}hinese Meeting Summarization Dataset",
+    author = "Wu, Han and Zhan, Mingjie and Tan, Haochen and Hou, Zhaohui and Liang, Ding and Song, Linqi",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = July,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.377",
+    pages = "6065--6079"
 }
 ```
-[comment]: <> (@inproceedings{wu2023vcsum,)
-
-[comment]: <> (  title={VCSUM: A Versatile Chinese Meeting Summarization Dataset},)
-
-[comment]: <> (  author={Wu, Han and Zhan, Mingjie and Tan, Haochen and Hou, Zhaohui and Liang, Ding and Song, Linqi},)
-
-[comment]: <> (  booktitle={Findings of the Association for Computational Linguistics: ACL 2023},)
-
-[comment]: <> (  year={2023})
-
-[comment]: <> (})
